@@ -171,6 +171,14 @@ a:hover {
     margin: 10px 0;
 }
 
+#copy{
+    color: #a3a3a3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
 img#socialmidia {
     margin-right: 10px;
 }
