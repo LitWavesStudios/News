@@ -89,11 +89,39 @@ a:hover {
     height: 100%; 
 }
 
-
 .news-container {
     width: 500px;
     margin: 0 auto;
-    
+}
+
+.languages-button{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.languages-button button{
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 2px;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.en:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    background: linear-gradient(45deg, red, blue);
+}
+
+.pt-br:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    background: linear-gradient(45deg, rgb(0, 255, 21), rgb(229, 255, 0));
+    color: #000000;
 }
 
 .news-container img{
