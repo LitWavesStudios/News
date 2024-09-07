@@ -4,12 +4,15 @@ body {
     padding: 0;
     /*background-color: #f4f4f4;*/
     text-align: justify;
+    overflow-x: hidden;
 }
+
 .container {
     width: 500px;
     margin: 0 auto;
     padding: 20px;
 }
+
 .container img{
     text-align: center;
     display: block;
@@ -90,7 +93,7 @@ a:hover {
 .news-container {
     width: 500px;
     margin: 0 auto;
-    padding: 20px;
+    
 }
 
 .news-container img{
