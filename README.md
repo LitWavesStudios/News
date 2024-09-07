@@ -1,2 +1,2 @@
-# LitNews
+# LitWaves News
  
