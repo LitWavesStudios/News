@@ -36,14 +36,11 @@ $(function(){
         $(".item .content h2").eq(1).text("Armas e Coletáveis");
 
         // Atualiza o conteúdo da seção "Armas e Coletáveis"
-        $(".item").children().eq(7).find("p").html(
-            "No jogo, as armas são variadas e cada uma possui suas próprias peculiaridades e status, proporcionando uma ampla gama de opções para o jogador. Entre elas, destacamos a arma base, uma arma branca que se revela crucial em momentos extremos. Ela é ideal para situações onde a rapidez e a precisão são essenciais, ajudando o jogador a enfrentar desafios de forma eficaz.<br><br>" +
-            "<h4>Como obter novas armas?</h4>" +
-            "As novas armas estão estrategicamente espalhadas pelo mapa do jogo. À medida que o jogador desbloqueia novas áreas, ele ganha a oportunidade de descobrir e adquirir essas armas. Explorar o ambiente e avançar para regiões inexploradas é a chave para enriquecer seu arsenal e encontrar novos equipamentos que podem ser decisivos em batalhas.<br><br>" +
-            "<h4>E as munições?</h4>" +
-            "As munições também estão distribuídas por todo o mapa. O jogador pode encontrá-las em locais como dentro de casas, latas de lixo e caixas espalhadas pelo cenário. Vale ressaltar que as munições são limitadas, portanto, é fundamental usá-las com sabedoria. Gerenciar a quantidade de munição e economizar para momentos críticos é crucial, pois ficar sem munição na hora certa pode ser desastroso."
-        );
-
+        $(".item").children().eq(7).find("p").text("No jogo, as armas são variadas e cada uma possui suas próprias peculiaridades e status, proporcionando uma ampla gama de opções para o jogador. Entre elas, destacamos a arma base, uma arma branca que se revela crucial em momentos extremos. Ela é ideal para situações onde a rapidez e a precisão são essenciais, ajudando o jogador a enfrentar desafios de forma eficaz.");
+        $(".content h4").eq(0).text("Como obter novas armas?");
+        $(".content p").eq(2).text("As novas armas estão estrategicamente espalhadas pelo mapa do jogo. À medida que o jogador desbloqueia novas áreas, ele ganha a oportunidade de descobrir e adquirir essas armas. Explorar o ambiente e avançar para regiões inexploradas é a chave para enriquecer seu arsenal e encontrar novos equipamentos que podem ser decisivos em batalhas.");
+        $(".content h4").eq(1).text("E as munições?");
+        $(".content p").eq(3).text("As munições também estão distribuídas por todo o mapa. O jogador pode encontrá-las em locais como dentro de casas, latas de lixo e caixas espalhadas pelo cenário. Vale ressaltar que as munições são limitadas, portanto, é fundamental usá-las com sabedoria. Gerenciar a quantidade de munição e economizar para momentos críticos é crucial, pois ficar sem munição na hora certa pode ser desastroso.")
         // Atualiza o título da seção "Inspirações"
         $(".item .content h2").eq(2).text("Inspirações");
 
@@ -100,13 +97,12 @@ $(function(){
         $(".item .content h2").eq(1).text("Weapons and Collectibles");
 
         // Updates the content of the "Weapons and Collectibles" section
-        $(".item").children().eq(7).find("p").html(
-            "In the game, weapons are varied, each with its own peculiarities and stats, providing a wide range of options for the player. Among them, we highlight the base weapon, a melee weapon that proves crucial in extreme situations. It is ideal for situations where speed and precision are essential, helping the player face challenges effectively.<br><br>" +
-            "<h4>How to obtain new weapons?</h4>" +
-            "New weapons are strategically scattered throughout the game's map. As the player unlocks new areas, they get the opportunity to discover and acquire these weapons. Exploring the environment and advancing to unexplored regions is key to enriching your arsenal and finding new equipment that can be decisive in battles.<br><br>" +
-            "<h4>And the ammunition?</h4>" +
-            "Ammunition is also distributed throughout the map. The player can find it in places such as inside houses, trash cans, and boxes scattered around the environment. It is important to note that ammunition is limited, so it is essential to use it wisely. Managing the amount of ammunition and saving for critical moments is crucial, as running out of ammo at the wrong time can be disastrous."
-        );
+        $(".item").children().eq(7).find("p").text("In the game, weapons are varied, each with its own unique characteristics and stats, providing a wide range of options for the player. Among them, we highlight the basic weapon, a melee weapon that proves crucial in extreme moments. It is ideal for situations where speed and precision are essential, helping the player tackle challenges effectively.");
+        $(".content h4").eq(0).text("How to obtain new weapons?");
+        $(".content p").eq(2).text("New weapons are strategically scattered across the game map. As the player unlocks new areas, they gain the opportunity to discover and acquire these weapons. Exploring the environment and advancing to unexplored regions is key to enriching your arsenal and finding new equipment that can be decisive in battles.");
+        $(".content h4").eq(1).text("And the ammunition?");
+        $(".content p").eq(3).text("Ammunition is also distributed throughout the map. The player can find it in places like inside houses, trash cans, and boxes scattered around the scene. It is worth noting that ammunition is limited, so it is essential to use it wisely. Managing the amount of ammunition and saving it for critical moments is crucial, as running out of ammunition at the wrong time can be disastrous.");
+
 
         // Updates the title of the "Inspiration" section
         $(".item .content h2").eq(2).text("Inspiration");
