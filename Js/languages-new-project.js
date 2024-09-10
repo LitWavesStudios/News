@@ -41,17 +41,22 @@ $(function(){
         $(".content p").eq(2).text("As novas armas estão estrategicamente espalhadas pelo mapa do jogo. À medida que o jogador desbloqueia novas áreas, ele ganha a oportunidade de descobrir e adquirir essas armas. Explorar o ambiente e avançar para regiões inexploradas é a chave para enriquecer seu arsenal e encontrar novos equipamentos que podem ser decisivos em batalhas.");
         $(".content h4").eq(1).text("E as munições?");
         $(".content p").eq(3).text("As munições também estão distribuídas por todo o mapa. O jogador pode encontrá-las em locais como dentro de casas, latas de lixo e caixas espalhadas pelo cenário. Vale ressaltar que as munições são limitadas, portanto, é fundamental usá-las com sabedoria. Gerenciar a quantidade de munição e economizar para momentos críticos é crucial, pois ficar sem munição na hora certa pode ser desastroso.")
+        // Atualiza Mapa do Jogo
+        $(".item .content h2").eq(2).text("Sobre o mapa:");
+        $(".item").children().eq(9).find("p").html("O mapa do jogo é um ambiente dinâmico e expansivo dividido em áreas temáticas interconectadas. À medida que o jogador avança, novas áreas são desbloqueadas com base no progresso do jogo, oferecendo novos desafios e monstros temáticos. A estrutura de desbloqueio é projetada para proporcionar uma experiência progressiva e imersiva, com a exploração de cada área oferecendo recompensas e oportunidades para crescimento e evolução no jogo.");
+        $(".item").children().eq(9).find("img").attr("src", "IMGs/pt-br_map.png");
+        
         // Atualiza o título da seção "Inspirações"
-        $(".item .content h2").eq(2).text("Inspirações");
+        $(".item .content h2").eq(3).text("Inspirações");
 
         // Atualiza o conteúdo da seção "Inspirações"
-        $(".item").children().eq(9).find("p").html(
+        $(".item").children().eq(10).find("p").html(
             "<span style='font-size: medium; font-weight: 700;'>Coraline / Little Nightmares / Bloodborne</span> inspiram a ambientação e estética;<br><br>" +
             "<span style='font-size: medium; font-weight: 700;'>Soul Knight / Hades / Cod Black Ops Cold War - Zombie mode</span> inspiram mecânicas remanescentes do gênero Roguelite e Power Ups ao fim de cada wave."
         );
 
         // Atualiza o texto da seção "Acabou?"
-        $(".item .content h2").eq(3).text("Acabou?");
+        $(".item .content h2").eq(4).text("Acabou?");
         $(".item .content").last().find("p").html(
             "Obrigado por ler até aqui, fique atento às novidades em nosso perfil no <a href='https://bsky.app/profile/litwavesstudios.bsky.social'><span style='font-size: medium; font-weight: 700; cursor: pointer; text-decoration: none; color: inherit;'>BlueSky</span></a>, estamos sempre atualizando e mostrando o andamento e desenvolvimento do jogo. E não, não acabou! Temos mais novidades pela frente..."
         );
@@ -103,18 +108,22 @@ $(function(){
         $(".content h4").eq(1).text("And the ammunition?");
         $(".content p").eq(3).text("Ammunition is also distributed throughout the map. The player can find it in places like inside houses, trash cans, and boxes scattered around the scene. It is worth noting that ammunition is limited, so it is essential to use it wisely. Managing the amount of ammunition and saving it for critical moments is crucial, as running out of ammunition at the wrong time can be disastrous.");
 
+        // Updates Maps of game
+        $(".item .content h2").eq(2).text("About the Map:");
+        $(".item").children().eq(9).find("p").html("The game map is a dynamic and expansive environment divided into interconnected thematic areas. As the player progresses, new areas are unlocked based on the game's progress, offering new challenges and thematic monsters. The unlocking structure is designed to provide a progressive and immersive experience, with the exploration of each area offering rewards and opportunities for growth and evolution in the game.");
+        $(".item").children().eq(9).find("img").attr("src", "IMGs/en_map.png");
 
         // Updates the title of the "Inspiration" section
-        $(".item .content h2").eq(2).text("Inspiration");
+        $(".item .content h2").eq(3).text("Inspiration");
 
         // Updates the content of the "Inspiration" section
-        $(".item").children().eq(9).find("p").html(
+        $(".item").children().eq(10).find("p").html(
             "<span style='font-size: medium; font-weight: 700;'>Coraline / Little Nightmares / Bloodborne</span> inspire the setting and aesthetics;<br><br>" +
             "<span style='font-size: medium; font-weight: 700;'>Soul Knight / Hades / Cod Black Ops Cold War - Zombie mode</span> inspire mechanics reminiscent of the Roguelite genre and Power Ups at the end of each wave."
         );
 
         // Updates the text of the "Done?" section
-        $(".item .content h2").eq(3).text("Done?");
+        $(".item .content h2").eq(4).text("Done?");
         $(".item .content").last().find("p").html(
             "Thank you for reading this far. Stay tuned for updates on our profile on <a href='https://bsky.app/profile/litwavesstudios.bsky.social'><span style='font-size: medium; font-weight: 700; cursor: pointer; text-decoration: none; color: inherit;'>BlueSky</span></a>. We are always updating and showing the progress and development of the game. And no, it’s not over! We have more news ahead..."
         );
