@@ -151,20 +151,56 @@ a:hover {
     width: 100%;
 }
 
-.post-item{
+/* Define a animação de fade-in da direita para a esquerda */
+@keyframes fadeInFromRight {
+    0% {
+        background-position: 100% 0;
+        opacity: 1;
+    }
+    100% {
+        background-position: 0 0;
+        opacity: 1;
+    }
+}
+
+/* Define a animação de fade-out da esquerda para a direita */
+@keyframes fadeOutToRight {
+    0% {
+        background-position: 0 0;
+        opacity: 1;
+    }
+    100% {
+        background-position: 100% 0;
+        opacity: 1;
+    }
+}
+
+.post-item {
+    position: relative;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     margin: auto;
     margin-bottom: 20px;
     padding: 10px;
     text-align: center;
-    transition: all 0.3s ease;
+    overflow: hidden;
+    background: linear-gradient(to right, #95adff 1%, #ffffff 30%);
+    background-size: 200% 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Começa invisível */
 }
 
-.post-item:hover{
+/* Animação para o estado normal (não hover) */
+.post-item:not(:hover) {
+    animation: fadeOutToRight 1s ease-in-out forwards;
+}
+
+/* Animação para o estado de hover */
+.post-item:hover {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
     transform: scale(1.1);
-    transition: all 0.3s ease;
+    animation: fadeInFromRight 0.2s ease-in-out forwards;
+    opacity: 1; /* Assegura que o elemento está visível durante o hover */
 }
 
 .post h2{
